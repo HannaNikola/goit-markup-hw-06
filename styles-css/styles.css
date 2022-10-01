@@ -729,3 +729,13 @@ transform: translateY(0);
     visibility: hidden;
     pointer-events: none;
 }
+.modal-title {
+    font-family: roboto;
+    font-weight: 700;
+    color:#212121;
+    font-size: 20px;
+    line-height: 1.1em;
+    letter-spacing: 0.03em;
+    padding: 40px 40px;
+    
+}
