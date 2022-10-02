@@ -566,9 +566,8 @@ display: inline-block;
  }
 /* mailing footer */
 .mailing-list {
-    
-    align-items: baseline;
-    margin-left: 93px;
+align-items: baseline;
+margin-left: 93px;
 }
 
 .mailing-title {
@@ -595,6 +594,10 @@ display: inline-block;
     color: var(--white-color);
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    font-family: roboto;
+    font-weight: 700;
+    
 }
 
 .form-mail{
@@ -609,12 +612,23 @@ display: inline-block;
     width: 358px ;
     height: 50px;
     padding: 10px;
+   
+}
+.mail-li input:hover,
+.mail-li input:hover {
+border-color: var(--accent-text);
+
 }
 
-    
 .mail-li {
     display: flex;
 }
+.icon-send{
+position: absolute;
+
+}
+
+
 /* portfolio navigations  */
 .section-portfolio {
     padding-top: 94px;
@@ -802,16 +816,20 @@ transform: translateY(0);
 }
 .form-element input{
     border: none;
+    outline: none;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 15px;
+    padding-left: 42px;
+    width: 100%;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
+    
 }
 .form-element input:hover,
 .form-element input:focus {
-    border-color: var(--accent-text);
-    transition: fill opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--accent-text);
+    transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .coment {
     margin-bottom: 4px;
@@ -834,5 +852,40 @@ transform: translateY(0);
 .form-btn:hover,
 .form-btn:focus {
     background-color: #188CE8;
+    transition: background-color opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-wrap{
+    position: relative;
+}
+.form-element svg {
+position: absolute;
+top: 50%;
+left: 12px;
+translate: 0 -50%;
+fill:#212121;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
+.form-element input:focus + svg,
+.form-element input:hover + svg {
+    fill: var(--accent-text);
+    transition: fill opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ,
+     color opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.textarea {
+border-color: none;
+border-style: none;
+outline: none;
+border: 1px solid rgba(33, 33, 33, 0.2);
+}
+.form-element  textarea:hover ,
+.form-element  textarea:focus {
+transition: fill opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+color opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-aria{
+    color: var(--accent-text);
+    text-decoration: underline;
+}
+
