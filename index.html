@@ -330,11 +330,10 @@
         <ul class="form-mail">
           <li class="mail-li list"><label for="email"></label>
           <input type="email" id="email" name="email" placeholder="E-mail"></li>
-        <li class="mail-li list"><button type="submit" class="footer-btn">Підписатися</button>
-      <svg width="24" height="24"class="icon-send">
-        <use xlink:href="./images/symbol-defs.svg#icon-send"></use>
-      </svg>
-        </li>
+        <li class="mail-li list"><button type="submit" class="footer-btn">Підписатися <svg width="24" height="24" class="icon-send">
+          <use xlink:href="./images/symbol-defs.svg#icon-send"></use>
+        </svg></button>
+       </li>
         </ul>
         </div>
       </div>
@@ -378,12 +377,16 @@
             </div>
             <div class="form-element " >
             <p class="coment">Коментар</p>
-            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+            <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Введіть текст" class="textaria"></textarea>
             </div>
-            <div role="group" class="chekbox-form">
-              <label for="checkbox">Погоджуюся з розсилкою та приймаю <a class="link-aria" href=" "><span>Умови договору</span></a></label>
-              <input type="checkbox" id="checkbox" name="checkbox">
-            </div>
+            <div role="group" class="accept">
+              <input type="checkbox" id="accept" name="accept" class="visually-hidden">
+              <div class="checkbox"><svg width="11" height="8" class="icon icon-Vector-modal">
+              <use xlink:href="./images/symbol-defs.svg#icon-Vector-modal"></use>
+              </svg></div>
+              <label for="accept">Погоджуюся з розсилкою та приймаю <a class="link-aria" href=" "><span>Умови
+                    договору</span></a></label>
+              </div>
             <button type="submit" class="form-btn">Відправити</button>
           </form>
         </div>
