@@ -572,7 +572,6 @@ margin-left: 93px;
 
 .mailing-title {
     display: inline-block;
-    padding-top: 72px;
     margin-bottom: 20px;
     font-family: roboto;
     font-weight: 700;
@@ -617,6 +616,12 @@ margin-left: 93px;
     width: 358px ;
     height: 50px;
     padding: 10px;
+    font-family: robota;
+    font-weight: 400 ;
+    font-size: 16px;
+    line-height: 1.15;
+    color: var(--white-color);
+
 }
 .mail-li input:hover,
 .mail-li input:hover {
@@ -780,7 +785,8 @@ transform: translateY(0);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.close-button:hover{
+.close-button:hover,
+.close-button:focus {
     fill: var(--accent-battons-hover);
 }
 .modal:hover{
@@ -809,6 +815,11 @@ transform: translateY(0);
 }
 .form-element label{
     margin-bottom: 4px;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1em;
+    letter-spacing: 0.01em;
 }
 .form-element input{
     border: none;
@@ -829,13 +840,22 @@ transform: translateY(0);
 }
 .coment {
     margin-bottom: 4px;
+    font-family: roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1em;
+    letter-spacing: 0.01em;
 }
 .chekbox-form{
     margin-top: 20px;
 }
 .form-btn {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
     border-color: none;
     border-style: none;
+    border-color: transparent;
     padding: 10px 52px;
     margin-top: 30px;
     background-color: var(--accent-text);
@@ -873,7 +893,10 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 border-color: none;
 border-style: none;
 outline: none;
+Width : 448px ;
+height: 120px;
 padding: 15px;
+margin-bottom: 20px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px ;
 transition: border opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -891,6 +914,7 @@ color opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .accept {
     display: flex;
+    justify-content: center;
     font-family: roboto;
     font-weight: 400;
     font-size: 14px;
@@ -907,7 +931,7 @@ color opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     margin-right: 7px;
 }
-.accept input:checked +.checkbox {
+.accept input:checked + .checkbox {
     background: var(--accent-text);
     border: 2px solid var(--accent-text);
     border-radius: 4px;
